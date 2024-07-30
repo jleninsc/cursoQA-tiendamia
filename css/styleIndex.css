@@ -1,0 +1,350 @@
+body,
+html {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+/* Header */
+header {
+    min-height: 16vh;
+    background-color: red;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* header: div -> search */
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search .logo {
+    flex: 1;
+}
+
+.search .logo img {
+    width: 50%;
+    padding: 10px;
+}
+
+.search .form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .form form {
+    width: 100%;
+}
+
+.search .form input {
+    width: 100%;
+    border-radius: 14px;
+    border: none;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.search .social {
+    flex: 1;
+    padding-right: 2%;
+}
+
+.search .social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+.search .social ul li {
+    padding: 0 10px;
+}
+
+/* header: div -> nav */
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 1vh;
+}
+
+.nav ul li a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Fin del Header */
+
+/* Section */
+section {
+    height: 300px;
+}
+
+#hero {
+    background: url("/images/hero_bg.png");
+    background-size: cover;
+    background-position: top center;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: inherit;
+    min-height: inherit;
+    padding-left: 2%;
+}
+
+.title-container span {
+    display: block;
+    color: white;
+    font-weight: 700;
+}
+
+.title-container span:first-child {
+    font-size: 2.14rem;
+}
+
+.title-container span:last-child {
+    font-size: 5rem;
+}
+
+/* Fin del Section */
+
+/* Main */
+main {
+    height: auto;
+}
+
+/* Tarjeta de Producto */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 30px;
+}
+
+.product-card {
+    background-color: #f0f0f0;
+    border-radius: 14px;
+    width: auto;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.product-card a{
+    text-decoration: none;
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.product-info {
+    padding: 4%;
+}
+
+.product-title {
+    word-wrap: break-word;
+    display: block;
+    margin-bottom: 5px;
+    color: initial;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.product-price-block {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.product-price-block .price {
+    font-size: 18px;
+    font-weight: 700;
+    color: rebeccapurple;
+}
+
+.product-price-block .discount {
+    font-size: 12px;
+    font-weight: 700;
+    color: green;
+}
+
+.product-tax-policy {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: #999;
+}
+
+/* Fin de Tarjeta de Producto */
+
+/* Fin del Main */
+
+/* Footer */
+footer {
+    min-height: 170px;
+    background-color: red;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.columns-container .col {
+    flex: 1;
+}
+
+.columns-container .col ul {
+    list-style-type: none;
+}
+
+.columns-container .col ul li {
+    padding: 3px 0;
+}
+
+.columns-container .col ul li.col-main-item {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.columns-container .col ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid white;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2px;
+    
+}
+
+/* Fin del Footer */
+
+/* Vistas por Tamaño de Pantalla */
+@media(min-width: 2200px){
+    header {
+        min-height: 22vh;
+    }
+    .search .logo img {
+        width: 35%;
+    }
+}
+
+@media(max-width: 2200px){
+    header {
+        min-height: 20vh;
+    }
+}
+
+@media(max-width: 1800px){
+    header {
+        min-height: 17vh;
+    }
+}
+
+@media(max-width: 1400px){
+    header {
+        min-height: 16vh;
+    }
+}
+
+@media(max-width: 1024px){
+    header {
+        min-height: 14vh;
+    }
+
+    .search .emp a {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 900px) {
+    header {
+        min-height: 12vh;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 650px) {
+    .search .emp a {
+        font-size: 1em;
+    }
+
+    .title-container span:first-child {
+        font-size: 4vh;
+    }
+
+    .title-container span:last-child {
+        font-size: 8vh;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 435px) {
+    header {
+        min-height: 14vh;
+    }
+
+    .title-container span:first-child {
+        font-size: 3vh;
+    }
+
+    .title-container span:last-child {
+        font-size: 6vh;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 275px) {
+    header {
+        min-height: 16vh;
+    }
+
+    .title-container span:first-child {
+        font-size: 1em;
+    }
+
+    .title-container span:last-child {
+        font-size: 3em;
+    }
+}

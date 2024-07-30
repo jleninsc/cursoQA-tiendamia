@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tienda Virtual</title>
+
+    <link rel="stylesheet" href="../css/styleDetallesProducto.css">
+</head>
+
+<body>
+    <!---->
+    <header>
+        <div class="search" href="../index.html">
+            <div class="logo" href="../index.html">
+                <a href="../index.html">
+                    <img src="/images/tiendamia-logo.svg" alt="Logo de tienda">
+                </a>
+            </div>
+            <div class="form">
+                <form action="">
+                    <input type="text" id="buscar" name="buscar" placeholder="Buscar..." />
+                </form>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><img src="/images/facebook.png" alt="Facebook"></li>
+                    <li><img src="/images/whatsapp.png" alt="Whatsapp"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Como comprar</a></li>
+                <li><a href="#">Costos y Tarifas</a></li>
+                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="#">Garantía</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- -->
+    <main>
+        <div class="container">
+            <div class="columns-container">
+                <div class="product-images-block-general">
+                    <div class="product-images-block">
+                        <div class="thumbnail-container">
+                            <img src="../images/mock1.jpg" alt="Descripción de la imagen 1" />
+                        </div>
+                        <div class="thumbnail-container">
+                            <img src="../images/mock2.jpg" alt="Descripción de la imagen 2" />
+                        </div>
+                        <img class="main-image" src="../images/mock2.jpg" alt="Descripción de la imagen 2" />
+                    </div>
+                </div>
+                <div class="product-description-block">
+                    <h1 class="title">MacBook Pro 13.4'</h1>
+                    <h3>Color</h3>
+                    <form class="selector">
+                        <fieldset>
+                            <select type="text" placeholder="Selecciona un color" id="selector" name="selector">
+                                <option value="negro-espacial">Negro espacial</option>
+                                <option value="gris-espacial">Gris espacial</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                    <div class="description">
+                        <h3>Descripción</h3>
+                        <p>Computadora portátil con 8GB Ram </p>
+                    </div>
+                </div>
+                <div class="product-checkout-block">
+                    <div class="checkout-container">
+                        <span class="checkout-total-label">Total:</span>
+                        <h2 class="checkout-total-price">$521000.00</h2>
+                        <p class="checkout-description">
+                            Incluye: impuesto PAIS y percepción AFIP.
+                        </p>
+                        <ul class="checkout-policy-list">
+                            <li>
+                                <span class="policy-icon">
+                                    <img src="../images/truck.png" alt="Truck">
+                                </span>
+                                <span class="policy-desc">
+                                    Agrega el producto al carrito para conocer las políticas de envío.
+                                </span>
+                            </li>
+                            <li>
+                                <span class="policy-icon">
+                                    <img src="../images/plane.png" alt="Plane">
+                                </span>
+                                <span class="policy-desc">
+                                    Recibe en aprox. 10 a 15 días hábiles, seleccionando envío normal.
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="checkout-process">
+                            <div class="top">
+                                <input type="number" value="1" step="1" min="1" max="10" id="cantidad" name="cantidad">
+                                <button class="btn-primary">Comprar</button>
+                            </div>
+                            <div class="bottom">
+                                <button class="btn-outline">
+                                    Añadir al carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns-container">
+                <span class="week-deals">Ofertas de la semana</span>
+            </div>
+            <div class="columns-container">
+                <div class="product-container">
+                    <article class="product-card">
+                        <a href="pages/detallesProducto.html">
+                            <img class="product-img" src="/images/mock1.jpg" alt="MacBook Pro" />
+                            <div class="product-info">
+                                <span class="product-title">MacBook Pro</span>
+                                <span class="product-description">Space Gray</span>
+                                <div class="product-price-block">
+                                    <span class="price">$750.000</span>
+                                    <span class="discount">50% Off</span>
+                                </div>
+                                <div class="product-tax-policy">Incluye impuestos</div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product-card">
+                        <a href="pages/detallesProducto.html">
+                            <img class="product-img" src="/images/mock1.jpg" alt="MacBook Pro" />
+                            <div class="product-info">
+                                <span class="product-title">MacBook Pro</span>
+                                <span class="product-description">Space Gray</span>
+                                <div class="product-price-block">
+                                    <span class="price">$750.000</span>
+                                    <span class="discount">50% Off</span>
+                                </div>
+                                <div class="product-tax-policy">Incluye impuestos</div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product-card">
+                        <a href="pages/detallesProducto.html">
+                            <img class="product-img" src="/images/mock1.jpg" alt="MacBook Pro" />
+                            <div class="product-info">
+                                <span class="product-title">MacBook Pro</span>
+                                <span class="product-description">Space Gray</span>
+                                <div class="product-price-block">
+                                    <span class="price">$750.000</span>
+                                    <span class="discount">50% Off</span>
+                                </div>
+                                <div class="product-tax-policy">Incluye impuestos</div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- -->
+    <footer>
+        <div class="container">
+            <div class="columns-container">
+                <div class="col">
+                    <ul>
+                        <li class="col-main-item"><a href="#">Ofertas</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Auriculares</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="col-main-item"><a href="#">Como comprar</a></li>
+                        <li><a href="#">Formas de pago</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="col-main-item"><a href="#">Costos y tarifas</a></li>
+                        <li><a href="#">Impuestos</a></li>
+                        <li><a href="#">Facturación</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="col-main-item"><a href="#">Mis pedidos</a></li>
+                        <li><a href="#">Pedir de nuevo</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="col-main-item"><a href="#">Garantía de entrega</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &reg; Lescware Technologies -
+                &copy; All rights reserved
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
