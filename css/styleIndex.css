@@ -6,7 +6,7 @@ html {
 
 /* Header */
 header {
-    min-height: 16vh;
+    min-height: 12vh;
     background-color: red;
     position: sticky;
     top: 0;
@@ -281,7 +281,7 @@ footer .container {
 
 @media(max-width: 1024px){
     header {
-        min-height: 14vh;
+        min-height: 12vh;
     }
 
     .search .emp a {
